@@ -1,0 +1,18 @@
+api_platform:
+  oauth:
+    enabled: true
+    clientId: '31c20fb2e9800fddd6f3516b789a74df'
+    clientSecret: '7b566ee4025b1803e52c0f54e61216ac8b894ea2db25de6a19675ff2e1d879eb6b7449c883054e5b23a7b53c33f81312c2c086ab4c05b3a25d310d7646dfdba1'
+    type: 'oauth2'
+    flow: 'password'
+    tokenUrl: '/token'
+    authorizationUrl: '/oauth/v2/auth'
+    scopes: []
+  formats:
+    json: ['application/json']
+    jsonld: ['application/ld+json']
+    html: ['text/html']
+    multipart: ['multipart/form-data']
+  defaults:
+    pagination_enabled: true
+    pagination_client_items_per_page: true
