@@ -90,6 +90,7 @@ use App\Controller\Image\ImageDeleteController;
     ),
     new Put(
         security: 'is_granted("ROLE_USER")',
+        normalizationContext: ['groups' => 'read'],
         denormalizationContext: ['groups' => 'write']
     ),
     new Post(
